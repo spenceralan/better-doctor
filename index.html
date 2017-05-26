@@ -5,23 +5,44 @@
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title></title>
+    <title>better doctor</title>
   </head>
 
   <body>
     <div class="container">
-      <h1>we can treat that... hopefully</h1>
+      <div class="row">
+        <h1>we can treat that... hopefully</h1>
 
-      <div class ="form-group">
-        <form>
-          <label>what is it?</label>
-          <input class="form-control" id="condition">
-          <br>
-          <button class="btn btn-default" id="get-doctors">find a doctor</button>
-        </form>
+        <div class="col-sm-4">
+          <div class ="form-group">
+            <form>
+              <label>what is it?</label>
+              <input class="form-control" id="condition">
+              <br>
+              <button class="btn btn-default" id="get-doctors-by-condition">find a doctor</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class ="form-group">
+            <form>
+              <label>search by specialty</label>
+              <input class="form-control" id="specialty">
+              <br>
+              <button class="btn btn-default" id="get-doctors-by-specialty">find a doctor</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+        </div>
+
       </div>
+
       <div class="results">
       </div>
+
     </div>
   </body>
 
