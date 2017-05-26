@@ -1,6 +1,6 @@
-# <!--PROJECT NAME HERE-->
+# Better Doctor API
 
-This project will save the world!
+This project will save your life and quite possibly the world! A simple web app for you to input your symptom that will return a list of doctors near you that could best help!
 
 ### Prerequisites
 
@@ -21,9 +21,14 @@ Once you have navigated to the correct directory, you will run the following com
 
 * bower install
 * npm install
+
+The required packages may take a few minutes to download and install due to the speed of your machine and your Internet connection. 
+
+There is an environment variable you will need as well that is not included in the repository, the Better Doctor API key. You will need to sign up for an account here https://developer.betterdoctor.com/ to get your own key. In the root directory of this project you must create a file named '.env' with one line in it 'exports.apiKey = "YOUR-KEY-GOES-HERE"'. The single quotes should not be in the file but the double quotes should. Once this file is in place you can return to the terminal and run the following command.
+
 * gulp serve
 
-The required packages may take a few minutes to download and install due to the speed of your machine and your Internet connection. The last command should launch the app in your browser! That's it!
+This last command should launch the app in your browser! That's it!
 
 ## Built With
 
@@ -37,13 +42,13 @@ The required packages may take a few minutes to download and install due to the 
 
 ## Authors
 
-* <!--YOUR NAME HERE-->
+* Spencer Alan Ruiz
 
 ## License
 
 MIT License
 
-Copyright (c) <!--YOUR NAME & YEAR HERE-->
+Copyright (c) 2017 Spencer Alan Ruiz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
