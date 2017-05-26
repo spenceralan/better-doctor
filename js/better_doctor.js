@@ -24,6 +24,14 @@ class Doctors {
     });
   }
 
+  allSpecialties(displaySpecialtyList) {
+    $.get(`https://api.betterdoctor.com/2016-03-01/specialties?user_key=${apiKey}`).then(function(query){
+      displaySpecialtyList(query.data);
+    }).fail(function() {
+      specialtyError();
+    });
+  }
+
 }
 
 exports.doctorsModule = Doctors;
