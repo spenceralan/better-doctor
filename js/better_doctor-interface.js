@@ -1,10 +1,6 @@
 let Doctors = require("./../js/better_doctor.js").doctorsModule;
 let PhoneNumber = require("./../js/phone_number.js").phoneNumberModule;
 
-let error = function() {
-    $(".results").append(`<h1>something went wrong. just like your condition.</h1>`);
-};
-
 let displayDoctors = function(doctors) {
   if (doctors.length === 0) {
     $(".results").append(`<h1>there were no results. no one can help you.</h1>`);
